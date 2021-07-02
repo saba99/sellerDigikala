@@ -1,0 +1,289 @@
+
+
+@font-face {
+    font-family: 'Yekan';
+    src: url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.eot');
+    src: url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.woff') format('woff'),
+        url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.ttf') format('truetype');
+    font-weight: normal;
+}
+.container-fluid{
+    direction: rtl;
+    text-align: right;
+    font-family: Yekan;
+    background-color: #f6f8fa;
+}.btn-success {
+    background: #00bfd6 !important;
+    border: 1px solid #00bfd6 !important;
+}
+
+
+.right_box {
+    background-color: white;
+    max-height: 100vh;
+    min-height: 100vh;
+    overflow: auto;
+    border-left: 1px solid #f5f7fa;
+}
+
+ul {
+    text-align: right;
+    list-style: none;
+}
+
+.step_ul {
+    margin-top: 30px;
+    padding-right: 15px;
+}
+
+.step_ul li {
+    position: relative;
+    height: 140px;
+}
+
+.step_ul li p {
+    margin-right: 50px;
+    font-size: 14px;
+    color: gray;
+}
+
+.step_ul li .step_header {
+    margin-right: 50px;
+}
+
+.step_active_icon {
+    position: absolute;
+    color: #fff;
+    background-color: #57cfb1;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step_active_icon::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 80px;
+    top: 50px;
+    right: 18px;
+    background: linear-gradient(0deg, #e6e9ed, #e6e9ed 50%, #57cfb1 50%);
+}
+
+.step_inactive_icon {
+    position: absolute;
+    color: #fff;
+    background-color: #e6e9ed;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step_inactive_icon::after {
+    position: absolute;
+    width: 2px;
+    height: 80px;
+    background: #e6e9ed;
+    content: "";
+    top: calc(100% + 10px);
+}
+
+.last_step_active_icon::after {
+    content: none;
+}
+
+.last_step::after {
+    content: none;
+}
+
+.right_box h5 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.step_inactive_icon .fa {
+    color: black !important;
+}
+
+.register_form_box {
+    margin: 100px auto;
+    width: 400px;
+}
+
+.register_form_box .input-group {
+    width: 400px !important;
+    margin-top:20px;
+}
+
+.register_form_box .form-control {
+    height: 46px !important;
+}
+
+.register_form_box .input-group-text {
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control {
+    font-size: 14px !important;
+}
+
+.register_form_box .fa-mobile {
+    font-size: 25px;
+}
+
+.register_form_box .fa-lock {
+    font-size: 22px;
+}
+
+.btn_div {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px !important;
+}
+
+.btn-success {
+    font-size: 14px !important;
+    border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+.input-group-text {
+    height: 45px;
+    border-radius:0px;
+}
+
+#spinner {
+    display: flex;
+    align-items: center;
+}
+
+.validate_error_border {
+    border: 1px solid #ef5662 !important;
+}
+
+.has_error {
+    color: red;
+    font-size: 14px;
+    padding-top: 10px;
+}
+.register_form_box .form-group{
+    margin-top: 20px;
+}
+
+.custom-select {
+    font-family: Yekan;
+    font-size: 13px;
+    height: 46px !important;
+    width:187px;
+    border:1px solid #e2e2e2;
+}
+
+.register_label {
+    width: 60px !important;
+    margin-right: 20px;
+}
+
+.line {
+    width: 45px;
+    height: 1px;
+    background: #000;
+    float: right;
+    margin-left: 10px;
+}
+
+.line_box {
+    width: 330px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.number_input {
+    letter-spacing: 45px;
+    border: none !important;
+    width: 340px;
+    height: 35px;
+    text-align: left !important;
+    margin-right: -15px;
+    background: none !important;
+}
+
+.number_input_div {
+    width: 370px;
+    margin: auto
+}
+
+.account_title {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.timer {
+    cursor: pointer;
+    font-size: 14px;
+    padding-top: 10px;
+}.register_form_box input[type="file"]{
+    display: none;
+}
+.register_form_box  .alert-success{
+    line-height: 30px;
+    padding: 15px 17px;
+}
+.select_file_div{
+    display: inline-flex;
+    width: 100%;
+    border:1px solid #bee5eb;
+    cursor: pointer;
+    font-size: 14px;
+    background: white;
+}
+.select_file_div .title{
+    background:#00bfd6;
+    display: block;
+    width: 100px;
+    color: white;
+    text-align: center;
+}
+.select_file_div div{
+    padding: 13px;
+}
+.select_file_div .file_name{
+    width: calc(100% - 100px);
+    text-align: left;
+    direction: ltr;
+}.login_right_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.login_right_box img{
+    max-width: 150px;
+}.register_link{
+    color:#4fcce9;
+    border-bottom: 1px solid #4fcce9;
+    margin-right: 10px;
+}
+.register_link:hover{
+    color:#4fcce9;
+}
+a:hover{
+    text-decoration: none !important;
+}
