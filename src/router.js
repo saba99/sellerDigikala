@@ -21,7 +21,11 @@ import AddPackage from './components/AddPackage';
 import Package from './components/Package.vue';
 import PackageContent from './components/PackageContent.vue';
 import InventoryLists from './components/InventoryLists.vue';
-import Profile from './components/Profile.vue';
+import Profile from './components/Profile.vue'; 
+import MessageList from './components/MessageList.vue';
+import MessageContent from './components/MessageContent.vue';
+import AddMessage from './components/AddMessage.vue'; 
+import Factor from './components/Factor.vue';
 Vue.config.productionTip = false
 
 function check_login(next) {
@@ -117,6 +121,26 @@ const routes = [
             }
         ],
         beforeEnter: (to, from, next) => {
+            check_auth(next)
+        }
+    }, {
+        path: baseUrl + '/messages', component: Admin, children: [
+            {
+                path: '/', component: MessageList, name: 'MessageList'
+            },
+            {
+                path: ':id/show', component: MessageContent, name: 'MessageContent'
+            },
+            {
+                path: 'add', component: AddMessage, name: 'AddMessage'
+            }
+        ],
+        beforeEnter: (to, from, next) => {
+            check_auth(next)
+        }
+    },
+    {
+        path: baseUrl + '/package/show/:id/factor', component: Factor, beforeEnter: (to, from, next) => {
             check_auth(next)
         }
     }, {

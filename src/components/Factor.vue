@@ -38,7 +38,7 @@
             <tr
               v-for="(row,key) in list"
               :key="key"
-              v-if="key>=((n-1)*count) && key<((n-1)*count)+count"
+              
             >
               <td>{{ getRow(key) }}</td>
               <td>
